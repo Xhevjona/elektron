@@ -1,0 +1,220 @@
+.commercial-bg {
+    background-image: url("../Image/commercial-services.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    button {
+      padding: 15px 40px;
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+  .commercial-desc {
+    h2 {
+      color: #ffffff;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 30px;
+    }
+    p {
+      color: #ffffff;
+      text-align: center;
+      width: 650px;
+      margin: auto;
+      font-size: 15px;
+    }
+  }
+  
+  .list1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    .wrapper1 {
+      margin-left: -50px;
+      height: 350px;
+      width: 430px;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      text-align: center;
+      align-items: center;
+      p {
+        color: #ffffff;
+        text-align: left;
+        line-height: 29px;
+        font-size: 15px;
+        margin-left: 110px;
+        margin-top: 15px;
+      }
+    }
+  }
+  
+  .list2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    .wrapper2 {
+      z-index: 1;
+      margin-right: -50px;
+      height: 350px;
+      width: 430px;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      text-align: center;
+      p {
+        color: #ffffff;
+        text-align: right;
+        line-height: 29px;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-right: 110px;
+      }
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .commercial-bg {
+      height: 300px;
+    }
+    .list1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      .wrapper1 {
+        margin-left: -50px;
+        height: 320px;
+        width: 350px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        text-align: center;
+        align-items: center;
+        p {
+          color: #ffffff;
+          text-align: left;
+          line-height: 27px;
+          font-size: 13px;
+          margin-left: 80px;
+          margin-top: 13px;
+        }
+      }
+    }
+  
+    .list2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      .wrapper2 {
+        z-index: 1;
+        margin-right: -50px;
+        height: 320px;
+        width: 350px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        text-align: center;
+        p {
+          color: #ffffff;
+          text-align: right;
+          line-height: 27px;
+          font-size: 13px;
+          margin-top: 13px;
+          margin-right: 80px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .commercial-bg {
+      height: 300px;
+  
+      button {
+        padding: 12px 30px;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+    .commercial-desc {
+      h2 {
+        color: #ffffff;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 30px;
+      }
+      p {
+        color: #ffffff;
+        text-align: center;
+        width: 320px;
+        margin: auto;
+        font-size: 12px;
+      }
+    }
+    .list1 {
+      margin-top: 100px;
+      img {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        margin: auto;
+      }
+      .wrapper1 {
+        position: absolute;
+        margin: auto;
+        margin-top: 200px;
+        height: 200px;
+        width: 250px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        p {
+          color: #ffffff;
+          line-height: 17px;
+          text-align: center;
+          font-size: 12px;
+          margin-left:10px;
+          margin-top: 8px;
+        }
+      }
+    }
+    .list2 {
+      margin-top: 150px;
+      img {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        margin: auto; 
+      }
+      .wrapper2 {
+        position: absolute;
+        margin: auto;
+        margin-top: 200px;
+        height: 200px;
+        width: 250px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        p {
+          color: #ffffff;
+          line-height: 17px;
+          text-align: center;
+          font-size: 12px;
+          margin-right:5px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  

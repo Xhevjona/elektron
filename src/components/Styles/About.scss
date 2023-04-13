@@ -1,0 +1,181 @@
+.about-bg {
+  background-image: url("../Image/abt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    color: #ffffff;
+    padding: 10px 40px;
+    border: 1px solid #ffffff;
+  }
+}
+.abt-section {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.img-container {
+  display: flex;
+  gap: 30px;
+  .image1 {
+    margin-top: 50px;
+  }
+}
+.text-container {
+  margin-top: 50px;
+  h1 {
+    color: #985f34;
+    text-align: center;
+    font-weight: 600;
+  }
+  p {
+    color: #ffffff;
+    width: 550px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+.mission-container {
+  background-image: url("../Image/mission.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 150px;
+  
+  .mission {
+    h1 {
+      color: #985f34;
+      text-align: center;
+      font-weight: 700;
+    }
+    p {
+      color: #ffffff;
+      text-align: center;
+      width: 950px;
+      margin:20px auto;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .abt-section {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 200px;
+      height: 250px;
+    }
+  }
+  .text-container {
+    margin-top: 10px;
+    h1 {
+      color: #985f34;
+      text-align: center;
+      font-weight: 600;
+    }
+    p {
+      color: #ffffff;
+      width: 400px;
+      margin: 20px auto;
+      text-align: center;
+      line-height: 20px;
+      font-size: 13px;
+    }
+  }
+  .mission {
+    margin-top: 150px;
+    h1 {
+      color: #985f34;
+      text-align: center;
+    }
+    p {
+      color: #000000;
+      text-align: center;
+      width: 800px;
+      margin: 30px auto;
+      font-size: 13px;
+    }
+  }
+
+}
+@media screen and (max-width: 420px) {
+  .about-bg {
+    height: 300px;
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .abt-section {
+    margin: 150px auto;
+    display: block;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 150px;
+      height: 200px;
+    }
+  }
+  .text-container {
+    h1 {
+      color: #985f34;
+      text-align: center;
+      margin-top: -380px;
+      font-size: 30px;
+    }
+    p {
+      color: #ffffff;
+      width: 350px;
+      margin: 350px auto;
+      text-align: center;
+      line-height: 20px;
+      font-size: 13px;
+    }
+  }
+  .mission-container{
+    margin-top: -230px;
+  .mission {
+    margin-top: 0px;
+    h1 {
+      color: #985f34;
+      text-align: center;
+      font-size: 30px; 
+    }
+    p {
+      color: #ffffff;
+      text-align: center;
+      width: 350px;
+      margin: 20px auto;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}
+
+}
