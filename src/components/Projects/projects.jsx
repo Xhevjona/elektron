@@ -10,7 +10,7 @@ import Project7 from "../Image/project7.jpeg";
 
 const Projects = () => {
   const images = [
-    {
+    { 
       id: 1,
       src: Project1,
       alt: "Image 1",
