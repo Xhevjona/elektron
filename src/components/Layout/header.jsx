@@ -94,6 +94,7 @@ function Header() {
             <li className="nav-item" onClick={scrollToTop}>
               <NavLink
                 exact="true"
+                to="/about"
                 activeclassname="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
