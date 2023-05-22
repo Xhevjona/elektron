@@ -93,7 +93,7 @@ const Home = () => {
       <div className="wrapper">
         <div className="home">
           <div className="logo" data-aos="fade-right" data-aos-delay="400">
-            <h1>LOGO</h1>
+            <h1>ELEKTRON</h1>
           </div>
           <div className="slogan" data-aos="fade-right" data-aos-delay="800">
             <h2>Creating modern luxury through lighting</h2>
