@@ -492,6 +492,9 @@ textarea::placeholder {
 
 //Mobile width
 @media screen and (max-width: 420px) {
+  html, body {
+    overflow-x: hidden;
+    }
   .home {
     margin-top: 60px;
   }

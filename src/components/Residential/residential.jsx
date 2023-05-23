@@ -7,13 +7,13 @@ import 'aos/dist/aos.css';
 
 const residential = () => {
 
-  // AOS.init({
-  //   duration: 1000,
-  //   delay: 200,
-  //   easing: 'ease-in-out',
-  //   mirror: false,
-  //   once: true,
-  // });
+  AOS.init({
+    duration: 1000,
+    delay: 200,
+    easing: 'ease-in-out',
+    mirror: false,
+    once: true,
+  });
 
   return (
     <div>
@@ -22,10 +22,8 @@ const residential = () => {
       </div>
 
       <div className="residential-desc">
-        {/* <h2 data-aos="fade-right" data-aos-delay="300">We Offer</h2> */}
-        <h2> We Offer </h2>
-        {/* <p data-aos="fade-right" data-aos-delay="400"> */}
-        <p>
+        <h2 data-aos="fade-right" data-aos-delay="300">We Offer</h2>
+        <p data-aos="fade-right" data-aos-delay="400">
           Our company offers a wide range of residential services,
           including installation, repair, and maintenance of electrical systems.
           We understand the importance of keeping your home safe and functional,
@@ -37,8 +35,7 @@ const residential = () => {
       </div>
       <div className="list11">
         <img src={Residential2} alt="list" width={400} height={300} />
-        {/* <div className="wrapper11" data-aos="fade-left" data-aos-delay="500"> */}
-        <div className="wrapper11">
+        <div className="wrapper11" data-aos="fade-left" data-aos-delay="500">
           <p>
             Electrical safety inspections
             <br />

@@ -56,6 +56,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  html, body {
+    overflow-x: hidden;
+    }
   .projects-desc {
     width: 350px;
     text-align: center;

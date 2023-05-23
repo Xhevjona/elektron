@@ -12,7 +12,7 @@ import Contact from "./components/Contact/contact";
 function App() {
   return (
     <Router>
-      {/* <Layout> */}
+      <Layout>
         <Routes>
           <Route exact="true" path="/" element={<Home />} />
           <Route exact="true" path="/residential-services" element={<Residential/>} />
@@ -21,7 +21,7 @@ function App() {
           <Route exact="true" path="/about" element= {<About/>} />
           <Route exact="true" path="/contact-us" element={<Contact/>} />
         </Routes> 
-      {/* </Layout> */}
+      </Layout>
     </Router>
   );
 }

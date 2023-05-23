@@ -136,6 +136,9 @@
   }
   
   @media screen and (max-width: 420px) {
+    html, body {
+      overflow-x: hidden;
+      }
     .commercial-bg {
       height: 300px;
   
