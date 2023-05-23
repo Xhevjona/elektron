@@ -272,7 +272,7 @@
     .navbar {
       background-color: #3133339d;
       height: 50px;
-      width: 95%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -287,9 +287,9 @@
     .nav-icon {
       display: block;
       position: absolute;
-      top: 0;
-      right: 35px;
-      transform: translate(-100%, 35%);
+      top:10px;
+      right: 50px;
+      transform: translate(-50%);
       font-size: 1.8rem;
       cursor: pointer;
       color: #985F34;
