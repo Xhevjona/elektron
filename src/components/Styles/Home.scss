@@ -499,23 +499,23 @@ textarea::placeholder {
     margin-top: 60px;
   }
   .logo {
-    margin-top: 70px;
+    margin-top: 90px;
     h1 {
       color: #985f34;
       text-align: center;
-      margin-left: 200px;
+      margin-left: 150px;
       font-weight: 700;
-      font-size: 40px;
+      font-size: 35px;
     }
   }
   .slogan {
     h2 {
       color: #e9e2e2;
       text-align: center;
-      margin-top: 10px;
-      margin-left: 180px;
-      font-size: 19px;
-      width: 280px;
+      margin-top: 8px;
+      margin-left: 130px;
+      font-size: 18px;
+      width: 270px;
     }
   }
   .subs {
@@ -525,8 +525,8 @@ textarea::placeholder {
       // margin-top: 140px;
       margin: 170px auto;
       font-weight: 500;
-      width: 330px;
-      font-size: 15px;
+      width: 320px;
+      font-size: 13px;
     }
   }
   .image {
@@ -572,13 +572,13 @@ textarea::placeholder {
     h2 {
       color: #985f34;
       text-align: center;
-      font-size: 25px;
+      font-size: 22px;
     }
     p {
       padding-top: 20px;
       font-weight: 600;
       width: 330px;
-      font-size: 14px;
+      font-size: 13px;
       margin: auto;
     }
   }
@@ -636,9 +636,9 @@ textarea::placeholder {
     }
     p {
       color: #ffffff;
-      width: 330px;
+      width: 300px;
       margin: 580px auto;
-      font-size: 14px;
+      font-size: 13px;
     }
   }
   .about-bttn {
@@ -658,14 +658,14 @@ textarea::placeholder {
   }
   .projects-container {
     background-color: #ffffff;
-    height: 1200px;
+    height: 1100px;
     width: 100%;
     display: block;
     margin-top: 100px;
     text-align: center;
     img {
       width: 70%;
-      height: 290px;
+      height: 240px;
     }
   }
   .projects-text {
@@ -673,20 +673,22 @@ textarea::placeholder {
     h2 {
       color: #985f34;
       padding-top: 20px;
+      font-size: 22px;
     }
     p {
       color: #141414;
-      width: 300px;
+      width: 320px;
       margin-top: 20px;
       font-weight: 700;
       margin: 30px auto;
-      font-size: 14px;
+      font-size: 13px;
     }
   }
   .projects-bttn {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+
     button {
       padding: 10px 35px;
       background-color: transparent;
@@ -697,6 +699,7 @@ textarea::placeholder {
       cursor: pointer;
       font-size: 15px;
       font-weight: 600;
+
     }
   }
   .form-text {
