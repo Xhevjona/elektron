@@ -291,6 +291,15 @@ textarea::placeholder {
     margin-top: 5px;
   }
 }
+.success-message{
+
+P{
+  color: #985f34;
+  text-align: center;
+  font-size: 17px;
+  margin: 30px auto;
+}
+}
 //Tablet width
 @media screen and (max-width: 960px) {
   .wrapper {
@@ -488,6 +497,14 @@ textarea::placeholder {
       font-weight: 600;
     }
   }
+  .success-message{
+    P{
+      color: #985f34;
+      text-align: center;
+      font-size: 17px;
+      margin: 30px auto;
+    }
+    }
 }
 
 //Mobile width
@@ -730,4 +747,14 @@ textarea::placeholder {
     margin-top: 20px;
     color: #ffffff;
   }
+
+  .success-message{
+
+    P{
+      color: #985f34;
+      text-align: center;
+      font-size: 13px;
+      margin: 30px auto;
+    }
+    }
 }

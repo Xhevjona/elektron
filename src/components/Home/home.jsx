@@ -4,9 +4,9 @@ import Logo from "../Image/logo.jpg";
 import Residential from "../Image/residential.jpg";
 import Commercial from "../Image/commercial.jpg";
 import About from "../Image/about.jpg";
-import Project4 from "../Image/project4.jpeg";
+import Project12 from "../Image/project12.jpeg";
 import Project5 from "../Image/project5.jpeg";
-import Project6 from "../Image/project6.jpeg";
+import Project14 from "../Image/project14.jpeg";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import AOS from 'aos';
@@ -22,9 +22,11 @@ const Home = () => {
       mirror: false,
       once: true,
     });
+
   
   const form = useRef();
   const [errors, setErrors] = useState({});
+  const [isSentSuccessfully, setIsSentSuccessfully] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,9 +46,10 @@ const Home = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
+            setIsSentSuccessfully(true);
+          //   console.log(result.text);
             setFormData({ name: "", email: "", subject: "", message: "" });
-          },
+           },
           (error) => {
             console.log(error.text);
           }
@@ -61,7 +64,7 @@ const Home = () => {
 
   const validateForm = () => {
     let isValid = true;
-    let errors = {};
+    let errors = {}; 
     if (!formData.name.trim()) {
       isValid = false;
       errors.name = "Name is required";
@@ -192,9 +195,9 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <img src={Project4} alt="projects" width={330} height={370} />
+        <img src={Project12} alt="projects" width={330} height={370} />
         <img src={Project5} alt="projects" width={310} height={370} />
-        <img src={Project6} alt="projects" width={310} height={370} />
+        <img src={Project14} alt="projects" width={310} height={370} />
       </div>
       <div className="title">
         <h2>Contact Us</h2>
@@ -270,6 +273,13 @@ const Home = () => {
           </button>
         </form>
       </div>
+
+      {isSentSuccessfully && (
+        <div className="success-message">
+          <p> Form submitted successfully!</p>
+          </div> 
+
+      )}
     </div>
   );
 };

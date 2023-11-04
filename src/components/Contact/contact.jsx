@@ -1,19 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import "../Styles/Contact.scss";
 import Address from "../Image/address.png";
 import Phone from "../Image/phone.png";
 import Email from "../Image/email.png";
-import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
+// import mapboxgl from "mapbox-gl";
+// import "mapbox-gl/dist/mapbox-gl.css";
 import emailjs from "@emailjs/browser";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoieGhldmpvbmEiLCJhIjoiY2wxZG1mdDVhMGJqYjNjbjNuMWpkaXpoNSJ9.Gxfz4SZeyv-KDE56SVtJJQ";
+// mapboxgl.accessToken =
+//   "pk.eyJ1IjoieGhldmpvbmEiLCJhIjoiY2wxZG1mdDVhMGJqYjNjbjNuMWpkaXpoNSJ9.Gxfz4SZeyv-KDE56SVtJJQ";
 
 const Contact = () => {
-
+  
     AOS.init({
     duration: 1000,
     delay: 200,
@@ -22,8 +22,10 @@ const Contact = () => {
     once: true,
   });
 
+  
   const form = useRef();
   const [errors, setErrors] = useState({});
+  const [isSentSuccessfully, setIsSentSuccessfully] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,7 +45,7 @@ const Contact = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
+            setIsSentSuccessfully(true);
             setFormData({ name: "", email: "", subject: "", message: "" });
           },
           (error) => {
@@ -84,36 +86,36 @@ const Contact = () => {
     return isValid;
   };
 
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-  const mapContainer = useRef(null);
-  const map = useRef(null);
-  const [lng, setLng] = useState(-0.1275);
-  const [lat, setLat] = useState(51.50722);
-  const [zoom, setZoom] = useState(12);
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
+  // const mapContainer = useRef(null);
+  // const map = useRef(null);
+  // const [lng, setLng] = useState(-0.1275);
+  // const [lat, setLat] = useState(51.50722);
+  // const [zoom, setZoom] = useState(12);
 
-  useEffect(() => {
-    if (map.current) return;
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: "mapbox://styles/mapbox/dark-v10",
-      center: [lng, lat],
-      attributionControl: false,
-      zoom: zoom,
-    });
-    const marker = new mapboxgl.Marker({ color: "gold" })
-      .setLngLat([-0.1275, 51.50722])
-      .addTo(map.current);
-  });
-  useEffect(() => {
-    if (!map.current) return;
-    map.current.on("move", () => {
-      setLng(map.current.getCenter().lng.toFixed(4));
-      setLat(map.current.getCenter().lat.toFixed(4));
-      setZoom(map.current.getZoom().toFixed(2));
-    });
-  });
+  // useEffect(() => {
+  //   if (map.current) return;
+  //   map.current = new mapboxgl.Map({
+  //     container: mapContainer.current,
+  //     style: "mapbox://styles/mapbox/dark-v10",
+  //     center: [lng, lat],
+  //     attributionControl: false,
+  //     zoom: zoom,
+  //   });
+  //   const marker = new mapboxgl.Marker({ color: "gold" })
+  //     .setLngLat([-0.1275, 51.50722])
+  //     .addTo(map.current);
+  // });
+  // useEffect(() => {
+  //   if (!map.current) return;
+  //   map.current.on("move", () => {
+  //     setLng(map.current.getCenter().lng.toFixed(4));
+  //     setLat(map.current.getCenter().lat.toFixed(4));
+  //     setZoom(map.current.getZoom().toFixed(2));
+  //   });
+  // });
 
   return (
     <div>
@@ -238,11 +240,18 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      
+      {isSentSuccessfully && (
+        <div className="success-message">
+          <p> Form submitted successfully!</p>
+          </div> 
 
+      )}
+{/* 
       <div className="sidebar">
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       </div>
-      <div ref={mapContainer} className="map-container" />
+      <div ref={mapContainer} className="map-container" /> */}
     </div>
   );
 };
