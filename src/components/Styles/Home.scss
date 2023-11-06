@@ -361,11 +361,11 @@ P{
   .service-container {
     margin-top: 100px;
     width: 100%;
-    height: 370px;
+    height: 350px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
     z-index: -1;
   }
@@ -379,22 +379,22 @@ P{
     p {
       margin-top: 30px;
       font-weight: 600;
-      width: 330px;
+      width: 300px;
       font-size: 15px;
     }
   }
   .residential-services {
     position: relative;
     img {
-      width: 270px;
-      height: 320px;
+      width: 220px;
+      height: 270px;
     }
   }
   .commercial-services {
     position: relative;
     img {
-      width: 270px;
-      height: 320px;
+      width: 220px;
+      height: 270px;
     }
   }
   .overlay {
@@ -420,7 +420,12 @@ P{
     margin-top: 130px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
+    img{
+      width: 330px;
+      height: 200px;
+      margin-top: 30px;
+    }
   }
 
   .about-text {
@@ -428,20 +433,21 @@ P{
     margin-top: 10px;
     h2 {
       color: #985f34;
-      width: 380px;
+      width: 360px;
       margin: auto;
+      font-size: 22px;
     }
     p {
       color: #ffffff;
-      width: 450px;
-      margin-top: 30px;
+      width: 370px;
+      margin-top: 20px;
       font-size: 15px;
     }
   }
   .about-bttn {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
     button {
       padding: 10px 35px;
       background-color: transparent;
@@ -449,42 +455,51 @@ P{
       border-radius: 12px;
       color: #e9e2e2;
       cursor: pointer;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 600;
     }
   }
   .projects-container {
     background-color: #ffffff;
-    height: 290px;
+    height: 270px;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-    img {
-      width: 193px;
-      height: 290px;
+    margin-top: 130px;
+
+    .first{
+      width: 300px;
+      height: 270px;
     }
+    .second{
+      width: 180px;
+      height: 270px;
+    }
+    .third{
+      display: none;
+    }
+
   }
   .projects-text {
+    margin-top: 20px;
     text-align: center;
-    margin-top: 50px;
     h2 {
       color: #985f34;
       margin: auto;
     }
     p {
       color: #141414;
-      width: 230px;
-      margin-top: 30px;
+      width: 280px;
       font-weight: 700;
-      margin: 30px auto;
-      font-size: 14px;
+      margin: 20px auto;
+      font-size: 13px;
+      text-align: center;
     }
   }
   .projects-bttn {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
     button {
       padding: 10px 35px;
       background-color: transparent;
@@ -493,7 +508,7 @@ P{
       border: none;
       color: #ffffff;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
     }
   }

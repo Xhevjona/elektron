@@ -124,7 +124,7 @@ const Projects = () => {
     setSelectedImage(image.src);
     setShowPopup(true);
   };
-
+ 
   const closePopup = () => {
     setSelectedImage(null);
     setShowPopup(false);

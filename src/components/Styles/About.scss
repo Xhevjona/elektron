@@ -75,50 +75,101 @@
 }
 
 @media screen and (max-width: 960px) {
+  // .abt-section {
+  //   margin-top: 150px;
+  //   display: flex;
+  //   justify-content: center;
+  //   gap: 20px;
+  // }
+  // .img-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   img {
+  //     width: 180px;
+  //     height: 230px;
+  //   }
+  // }
+  // .text-container {
+  //   // margin-top: 10px;
+  //   h1 {
+  //     color: #985f34;
+  //     text-align: center;
+  //     font-weight: 600;
+  //   }
+  //   p {
+  //     color: #ffffff;
+  //     width: 320px;
+  //     margin: 20px auto;
+  //     text-align: center;
+  //     line-height: 20px;
+  //     font-size: 13px;
+  //   }
+  // }
   .abt-section {
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    margin: 150px auto;
+    display: block;
   }
   .img-container {
     display: flex;
     justify-content: center;
     img {
-      width: 200px;
-      height: 250px;
+      width: 170px;
+      height: 230px;
     }
   }
   .text-container {
-    margin-top: 10px;
     h1 {
       color: #985f34;
       text-align: center;
-      font-weight: 600;
+      margin-top: -400px;
+      // font-size: 25px;
     }
     p {
       color: #ffffff;
-      width: 400px;
-      margin: 20px auto;
+      width: 600px;
+      margin: 350px auto;
       text-align: center;
       line-height: 20px;
       font-size: 13px;
     }
   }
+
+  .mission-container{
+    margin-top: -230px;
   .mission {
-    margin-top: 150px;
+    margin-top: 0px;
     h1 {
       color: #985f34;
       text-align: center;
+      font-size: 25px; 
     }
     p {
-      color: #000000;
+      color: #ffffff;
       text-align: center;
-      width: 800px;
-      margin: 30px auto;
+      width: 650px;
+      margin: 20px auto;
       font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
     }
   }
+}
+  // .missiomn-container{
+  //   margin-top: -200px;
+  // }
+  // .mission {
+  //     h1 {
+  //     color: #985f34;
+  //     text-align: center;
+  //   }
+  //   p {
+  //     color: #000000;
+  //     text-align: center;
+  //     width: 600px;
+  //     margin: 0 auto;
+  //     font-size: 13px;
+  //   }
+  // }
 
 }
 @media screen and (max-width: 420px) {
@@ -131,7 +182,7 @@
       font-size: 20px;
     }
   }
-
+ 
   .abt-section {
     margin: 150px auto;
     display: block;

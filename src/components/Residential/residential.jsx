@@ -14,7 +14,7 @@ const residential = () => {
     mirror: false,
     once: true,
   });
-
+ 
   return (
     <div>
       <div className="residential-bg">

@@ -12,7 +12,7 @@ import emailjs from "@emailjs/browser";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
+ 
 const Home = () => {
 
     AOS.init({
@@ -195,9 +195,9 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <img src={Project12} alt="projects" width={330} height={370} />
-        <img src={Project5} alt="projects" width={310} height={370} />
-        <img src={Project14} alt="projects" width={310} height={370} />
+        <img src={Project12} alt="projects" width={330} height={370} className="first" />
+        <img src={Project5} alt="projects" width={310} height={370} className="second"/>
+        <img src={Project14} alt="projects" width={310} height={370}  className="third"/>
       </div>
       <div className="title">
         <h2>Contact Us</h2>
