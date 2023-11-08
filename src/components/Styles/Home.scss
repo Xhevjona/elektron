@@ -809,11 +809,21 @@ P{
       font-size: 35px;
     }
     p {
-      width: 550px;
+      width: 650px;
     }
   }
+
   .projects-container{
-    gap: 20px;
+    // gap: 20px;
+    .first{
+      width: 350px;
+    }
+    .second{
+      width: 350px;
+    }
+    .third{
+      width: 350px;
+    }
   }
   .projects-text {
     h2 {
