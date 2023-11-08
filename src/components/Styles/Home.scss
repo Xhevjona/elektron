@@ -561,7 +561,7 @@ P{
       font-size: 13px;
     }
   }
-  .image {
+  .image { 
     position: absolute;
     // float: left;
     // margin-right: 20px;
@@ -772,4 +772,29 @@ P{
       margin: 30px auto;
     }
     }
+}
+
+
+@media screen and (min-width: 1500px) {
+  
+.service-container {
+  gap: 90px;
+}
+.service-text {
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    width: 550px;
+  }
+}
+
+.projects-text {
+  h2 {
+    width: 380px;
+  }
+  p {
+    width: 530px;
+  }
+}
 }
