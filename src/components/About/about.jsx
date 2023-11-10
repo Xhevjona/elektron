@@ -16,9 +16,9 @@ const About = () => {
     once: true,
   });
 
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
   return (
     <div>
       <div className="about-bg">
